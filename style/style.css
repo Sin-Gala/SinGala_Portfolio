@@ -24,10 +24,17 @@ html{
 
 main{
     display: flex;
-    margin: 80px 80px;
+    margin: 80px;
     width: auto;
     height: auto;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px)
+{
+    main{
+        margin: 20px;
+    }
 }
 
 body{
@@ -86,6 +93,39 @@ img{
     height: auto;
 }
 
+@media only screen and (max-width: 1200px)
+{
+    #title_area div h1{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    #title_area div h1{
+        font-size: 50px;
+        top: 120px;
+        left: 120px;
+    }
+
+    #title_area div img{
+        top: 20px;
+        left: 20px;
+    }
+
+    #title_area img{
+        top: 60px;
+        left: 45px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    #title_area div h1{
+        font-size: 40px;
+    }
+}
+
 /* Presentation */
 #presentation_area{
     width: 80%;
@@ -141,6 +181,12 @@ img{
     display: block;
     text-align: center;
     cursor: pointer;
+    transform: scale(1);
+    transition: 1s ease;
+}
+
+#menu ul li p:hover{
+    transform: scale(1.1);
 }
 
 #menu ul li img{
@@ -149,6 +195,13 @@ img{
     width: 217px;
     height: 17px;
     margin: auto;
+}
+
+@media only screen and (max-width: 900px)
+{
+    #menu{
+        margin-top: 20px;
+    }
 }
 
 /* FOOTER */
