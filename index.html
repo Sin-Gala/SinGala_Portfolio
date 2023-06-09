@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to this website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Website title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" /> <!-- URL to page -->
+    <meta property="og:image" content="#" /> <!-- URL to image -->
+    <meta property="og:site_name" content=" Website name" />
+
+    <!-- https://realfavicongenerator.net/ -->
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>SinGala - Dev Portfolio</title>
+</head>
+
+<body onload="loadLanguagePref(); initDatas(); updatePresentation('about');">
+    <main>
+        <!-- Text Area -->
+        <section id="text_area">
+            <div id="title_area">
+                <img src="medias/corner_lines.png">
+                <div>
+                    <img src="medias/title_bg.png">
+                    <h1 id="title_txt"></h1>
+                </div>
+            </div>
+
+            <div id="presentation_area">
+                <p id="presentation_txt">
+                </p>
+            </div>
+
+            <br/>
+
+            <ul id="presentation_link_parent">
+            </ul>
+        </section>
+
+        <!-- Navigation Menu -->
+        <nav id="menu">
+            <ul>
+                <li><p onclick="updatePresentation('about');" href="about_me">About Me</p></li>
+                <li><img src="medias/separator.png"></li>
+                <li><p onclick="updatePresentation('web');" href="web_dev">Web Dev</p></li>
+                <li><img src="medias/separator.png"></li>
+                <li><p onclick="updatePresentation('game');" href="game_dev">Game Dev</p></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+
+        <div id="localizationBtns">
+            <img class="first_flag" src="medias/languages/english.jpg" title="English" alt="Switch to English" onclick="changeLanguage('en'); updatePresentation('old');" onmouseover="changeLanguage('en'); updatePresentation('old');">
+            <img src="medias/languages/french.jpg" title="Français" alt="Switch to French" onclick="changeLanguage('fr'); updatePresentation('old');" onmouseover="changeLanguage('fr'); updatePresentation('old');">
+            <img src="medias/languages/portuguese.jpg" title="Portuguese" alt="Switch to Portuguese" onclick="changeLanguage('pt'); updatePresentation('old');" onmouseover="changeLanguage('pt'); updatePresentation('old');">
+        </div>
+
+        <p>© 2023 - SinGala</p>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/presentation.js"></script>
+</body>
+</html>
