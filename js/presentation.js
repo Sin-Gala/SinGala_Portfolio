@@ -47,7 +47,7 @@ function initDatas()
                           "<br/><br/> Ao longo dos anos, criei sites para diversos propósitos e clientes, e tenho aprendido novos técnicas em cada projeto, me permitindo melhorar a cada dia neste ofício. <br><br/> Atualmente estou aprendendo React, Express.js e Three.js.",
                 },
                 [
-                    new linksDatas('https://github.com/Sin-Gala/JS-HTML-Localization', 'Website Plugins - JS'),
+                    new linksDatas('https://github.com/Sin-Gala/JS-Website-Plugins', 'Website Plugins - JS'),
                     new linksDatas('https://theanaproductions.com/', 'Theana Website'),
                 ]),
         'game': 
