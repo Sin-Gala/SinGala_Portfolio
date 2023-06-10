@@ -11,6 +11,10 @@
     color: #FFE9F1;
 }
 
+*::selection{
+    background-color: #520466;
+}
+
 html{
 	width: 100vw;
 	min-height: 100vh;
@@ -43,6 +47,12 @@ body{
 
 img{
     pointer-events: none;
+    user-drag: none;  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* TEXT AREA */
@@ -154,6 +164,12 @@ img{
     text-decoration: underline;
     font-style: italic;
     text-align: center;
+    transform: scale(1);
+    transition: 1s ease;
+}
+
+#text_area ul li a:hover{
+    transform: scale(1.1);
 }
 
 /* NAV MENU */

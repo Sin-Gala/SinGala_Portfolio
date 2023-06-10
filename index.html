@@ -45,11 +45,15 @@
         <!-- Navigation Menu -->
         <nav id="menu">
             <ul>
-                <li><p onclick="updatePresentation('about');" href="about_me">About Me</p></li>
+                <li><p onclick="updatePresentation('about');" id="about_menu_el"></p></li>
                 <li><img src="medias/separator.png"></li>
-                <li><p onclick="updatePresentation('web');" href="web_dev">Web Dev</p></li>
+                <li><p onclick="updatePresentation('game');" id="game_menu_el"></p></li>
                 <li><img src="medias/separator.png"></li>
-                <li><p onclick="updatePresentation('game');" href="game_dev">Game Dev</p></li>
+                <li><p onclick="updatePresentation('web');" id="web_menu_el"></p></li>
+                <li><img src="medias/separator.png"></li>
+                <li><p onclick="updatePresentation('other');" id="other_menu_el"></p></li>
+                <li><img src="medias/separator.png"></li>
+                <li><p onclick="updatePresentation('ability');" id="ability_menu_el"></p></li>
             </ul>
         </nav>
     </main>
@@ -57,9 +61,9 @@
     <footer>
 
         <div id="localizationBtns">
-            <img class="first_flag" src="medias/languages/english.jpg" title="English" alt="Switch to English" onclick="changeLanguage('en'); updatePresentation('old');" onmouseover="changeLanguage('en'); updatePresentation('old');">
-            <img src="medias/languages/french.jpg" title="Français" alt="Switch to French" onclick="changeLanguage('fr'); updatePresentation('old');" onmouseover="changeLanguage('fr'); updatePresentation('old');">
-            <img src="medias/languages/portuguese.jpg" title="Portuguese" alt="Switch to Portuguese" onclick="changeLanguage('pt'); updatePresentation('old');" onmouseover="changeLanguage('pt'); updatePresentation('old');">
+            <img class="first_flag" src="medias/languages/english.jpg" title="English" alt="English" onclick="changeLanguage('en'); updatePresentation('old');">
+            <img src="medias/languages/french.jpg" title="Français" alt="Français" onclick="changeLanguage('fr'); updatePresentation('old');">
+            <img src="medias/languages/portuguese.jpg" title="Brazilian Portuguese" alt="Brazilian Portuguese" onclick="changeLanguage('pt'); updatePresentation('old');">
         </div>
 
         <p>© 2023 - SinGala</p>
