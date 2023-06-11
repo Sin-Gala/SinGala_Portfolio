@@ -48,7 +48,7 @@ function initDatas()
                 },
                 [
                     new linksDatas('https://github.com/Sin-Gala/JS-Website-Plugins', 'Website Plugins - JS'),
-                    new linksDatas('https://theanaproductions.com/', 'Theana Website'),
+                    new linksDatas('https://theanaproductions.com/', 'Theana Website')
                 ]),
         'game': 
             new presentationDatas(
@@ -112,7 +112,7 @@ function initDatas()
                     'pt': "Linguagens que uso no meu trabalho diário: C#, JavaScript, HTML e CSS <br/>" +
                           "Linguagens que usei pelo menos uma vez: Julia, Lua, Java, SQL, PHP <br/><br/>" +
                           "Softwares e Frameworks que uso com frequência: Unity, Github, Blender <br/>" +
-                          "Softwares e Frameworks que usei pelo menos uma vez: MySQL, PHPMyAdmin, Live2D Cubism, PlaydateSDK, FabricSDK",
+                          "Softwares e Frameworks que usei pelo menos uma vez: MySQL, PHPMyAdmin, Live2D Cubism, PlaydateSDK, FabricSDK"
                 },
                 [])                           
       };
